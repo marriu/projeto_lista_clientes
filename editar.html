@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<body>
+    <h1>CAMPO DE EDIÇÃO</h1>
+
+    <div class="cadastro">
+        <div class="card">
+            <form id="editarForm">
+                <div class="align-input">
+                    <label for="nome">Nome:</label>
+                    <div class="align-span">
+                        <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
+                        <span>Informe seu nome</span>
+                    </div>
+                </div>
+
+                <div class="align-input">
+                    <label for="telefone">Telefone:</label>
+                    <div class="align-span">
+                        <input type="tel" name="telefone" id="telefone" placeholder="Informe seu telefone" maxlength="15" onkeyup="handlePhone(event)">
+                        <span>Informe seu telefone</span>
+                    </div>
+                </div>
+
+                <div class="align-input">
+                    <label for="endereco">Endereço:</label>
+                    <div class="align-span">
+                        <input type="text" name="endereco" id="endereco" placeholder="Informe seu endereço">
+                        <span>Informe seu endereço</span>
+                    </div>
+                </div>
+                
+                <button type="button" id="salvar">Salvar</button> 
+                <button type="button" id="cancelar">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    <script src="./edicao.js"></script>
+</body>
+</html>

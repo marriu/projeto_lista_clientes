@@ -1,0 +1,149 @@
+body {
+    background-color: #8D6A9F;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+}
+
+body h1 {
+    color: rgba(20, 20, 20, 0.904);
+    font-size: 100px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.card form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe8d1;
+    box-shadow: 7px 7px 13px 0 rgba(19, 19, 19, 0.63);
+    border-radius: 25px;
+    width: 480px;
+    height: 400px;
+    gap: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+
+.align-input {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.align-input input {
+    width: 15rem;
+    border-radius: 12px;
+    border: none;
+    height: 30px;
+    padding-left: 15px;
+    background-color: #ffffff;
+}
+
+.align-input label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(48, 47, 47);
+}
+
+.align-span {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+span {
+    display: none;
+}
+
+#btn-submit,
+#salvar,
+#cancelar {
+    width: 150px;
+    height: 40px;
+    background-color: #8D6A9F;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: background-color 0.5s, color 0.5s, transform 0.6s;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px;
+}
+
+#btn-submit:hover,
+#salvar:hover,
+#cancelar:hover {
+    background-color: #53305f;
+    color: #e2e1e1;
+    transform: scale(1.1);
+}
+
+.caixas {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe8d1;
+    box-shadow: 7px 7px 13px 0 rgba(19, 19, 19, 0.63);
+    border-radius: 20px;
+    padding: 30px;
+    margin-right: 30px; 
+    margin-bottom: 10px;
+    color: rgb(48, 47, 47);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.caixas p {
+    margin: 10px 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 24px;
+    color:  #53305f;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%; 
+        margin: 0 auto; 
+    }
+
+    .align-input label {
+        font-size: 14px;
+    }
+
+    .align-span input,
+    .align-span span {
+        width: 100%;
+    }
+
+    button {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+}
